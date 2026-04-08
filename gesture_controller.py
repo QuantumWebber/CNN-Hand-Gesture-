@@ -135,7 +135,7 @@ def main():
         cv2.putText(frame, "Press Q to quit", (10, 55),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (180, 180, 180), 1)
 
-        # --- Live gesture name bada dikhao ---
+      
         if current_gesture:
             label_text = GESTURE_LABELS.get(current_gesture, current_gesture)
             conf_text = f"{current_confidence:.0%}"
@@ -147,7 +147,7 @@ def main():
             cv2.putText(frame, conf_text, (500, 440),
                         cv2.FONT_HERSHEY_SIMPLEX, 1.0, (0, 255, 0), 2)
 
-        # --- Action flash (2 sec) ---
+       
         if time.time() - last_action_display_time < 2.0 and last_action_display:
             cv2.rectangle(frame, (150, 180), (490, 260), (0, 180, 0), -1)
             cv2.putText(frame, "ACTION!", (220, 215),
@@ -155,7 +155,7 @@ def main():
             cv2.putText(frame, last_action_display, (175, 250),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255), 2)
 
-        # --- Choti window ---
+       
         small = cv2.resize(frame, (320, 240))
         cv2.imshow("Gesture Controller", small)
 
