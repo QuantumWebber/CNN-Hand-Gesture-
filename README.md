@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Problem Statement
+##  Problem Statement
 
 Traditional media controls require physical interaction with input devices. This project builds a **touchless, gesture-based YouTube controller** using a standard webcam — making video playback accessible, intuitive, and hands-free.
 
@@ -19,7 +19,7 @@ A **CNN model** classifies hand gestures in real-time, which are then mapped to 
 
 ---
 
-## 🎯 Features
+##  Features
 
 | Gesture | Action |
 |---------|--------|
@@ -34,7 +34,7 @@ A **CNN model** classifies hand gestures in real-time, which are then mapped to 
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 hand-gesture-youtube-controller/
@@ -71,7 +71,7 @@ hand-gesture-youtube-controller/
 
 ---
 
-## 🔍 Approach
+##  Approach
 
 ### 1. Dataset
 - **LeapGestRecog** dataset from Kaggle
@@ -120,7 +120,7 @@ PyAutoGUI → Keyboard Shortcut → YouTube Action
 
 ---
 
-## 📊 Results
+##  Results
 
 | Metric | Score |
 |--------|-------|
@@ -149,14 +149,14 @@ PyAutoGUI → Keyboard Shortcut → YouTube Action
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Prerequisites
 ```bash
 pip install tensorflow opencv-python mediapipe pyautogui numpy matplotlib
 ```
 
-> ⚠️ **MediaPipe version note**: Use `mediapipe==0.10.x` for Python 3.10 compatibility on Windows. Newer versions may cause import errors.
+>  **MediaPipe version note**: Use `mediapipe==0.10.x` for Python 3.10 compatibility on Windows. Newer versions may cause import errors.
 
 ### Step 1 — Train the Model
 ```bash
@@ -177,7 +177,7 @@ python src/controller.py
 
 ---
 
-## 🧠 Key Learnings
+##  Key Learnings
 
 - **MediaPipe** provides robust hand landmark detection out of the box — no need to train a hand detector from scratch
 - CNN achieves near-perfect accuracy on LeapGestRecog because the dataset is clean and well-lit; real-world generalization requires data augmentation
@@ -186,7 +186,7 @@ python src/controller.py
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - [ ] Add data augmentation for better generalization across lighting conditions
 - [ ] Deploy as a **browser extension** (Chrome) for native YouTube integration
@@ -196,7 +196,7 @@ python src/controller.py
 
 ---
 
-## 👤 Author
+##  Author
 
 **Jatin** — B.Tech Engineering Physics, Delhi Technological University  
 GitHub: [@QuantumWebber](https://github.com/QuantumWebber)
